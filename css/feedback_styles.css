@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/*
+    CA2 – Interactive Website
+    
+    stylesheet page
+    Author: Min Thet Khine
+    Date:   29 MAY 2023
+
+    Filename: feedback_style.css
+*/
+
+/* video background */
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.backgroundVideo-feedback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* green image */
+.greenIMG {
+    max-width: 750px;
+    border:  2px solid rgb(202, 176, 145);
+    border-radius: 7px;
+}
+
+.greenIMG img {
+    border-radius: 7px;
+}
+
+
+/* feedback */
+.redTop {
+    height: 10px;
+    background-color: #EF3340;
+    border: 2px solid #EF3340;
+    border-radius: 7px 7px 0 0;
+    max-width: 750px;
+}
+
+.feedbackContainer {
+    max-width: 750px;
+    border: 2px solid rgba(202, 176, 145, 0.8);
+    border-top: 0;
+    border-radius: 0 0 7px 7px;
+    background-color: rgba(220, 220, 220, 0.8);
+}
+
+
+.feedbackHeader {
+    background-color: bisque;
+    display: flex;
+}
+
+.feedbackTitle, .pauePlayContainer {
+    flex: 1;
+}
+
+.pausePlayButton {
+    background-color: transparent;
+    border: 0;
+}
+
+.feedback-col {
+    background-color: transparent !important;
+}
+
+.feedbackNav {
+    background-color: transparent !important;
+}
+
+#formControl1, #formControl2, #formControl3 {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* footer nav */
+.footNav-feedback > a{
+    background-color: transparent !important;
+    color: rgb(120, 120, 120) !important;
+    border: 0 !important;
+
+}
+
+.footNav-feedback > a:hover {
+    color: #000 !important;
+}
+
+.footNav-feedback {
+    border-bottom: 3px solid transparent;
+}
+
+.footNav-feedback:hover {
+    border-bottom: 3px solid #EF3340;
+    transition: 0.5s;
+}
+
+.footNav-feedback-active > a{
+    background-color: rgb(254, 218, 156) !important;
+    color: #000 !important;
+    border-radius: 5px !important;
+    border: 0 !important;
+}

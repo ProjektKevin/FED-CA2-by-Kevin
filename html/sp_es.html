@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    CA2 – Interactive Website
+    
+    Page of Singapore Polytechnic's efforts
+    Author: Min Thet Khine
+    Date:   
+
+    Filename: sp_es.html
+-->  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP's efforts</title>
+    <link href="../css/stylesheet.css" rel="stylesheet">
+    <link href="../css/sp_es_style.css" rel="stylesheet">
+    <script src="../js/clock.js" async></script>
+    <script src="../js/progressJS.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+    
+<body id="body">
+    <header>
+        <div class="container-fluid text-center" >
+            <p>Min Thet Khine &#x2022; Kevin Lin &#x2022; DIT/FT/1A/02</p>
+        </div>
+    </header>
+
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-md py-0">
+            <div class="container-fluid">
+
+                <i class="bi bi-house-door-fill h4"></i>
+                <!-- -------------------- hamburger -------------------- -->
+                <a class="navbar-brand h2" href="index.html" id="portfolio">Kevin's Portfolio</a>
+
+                <!-- date & time -->
+                <div class="container-fluid " style="max-width: fit-content; margin-left: 0%; height: 100%;">
+                    <div id="clock">-</div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- -------------------- Main Navs -------------------- -->
+                <div class="collapse navbar-collapse" id="mainNav" style="max-width: fit-content;">
+                    <ul class="navbar-nav ms-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html" id="aboutMe">
+                                About Me
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="opinion.html" id="sustainabilityDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                My Sustainabilty
+                            </a>
+                            <ul class="dropdown-menu" id="sustainabiltyMenu" aria-labelledby="sustainabilityDropdown">
+                                <li><a class="dropdown-item" href="opinion.html#opinionTitle">My Opinion</a></li>
+                                <li><a class="dropdown-item" href="opinion.html#myGoals">Personal Goals</a></li>
+                                <li><a class="dropdown-item" href="opinion.html#generator">Task Generator</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="sp_es.html" id="effortsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                SP Efforts
+                            </a>
+                            <ul class="dropdown-menu" id="effortMenu" aria-labelledby="effortsDropdown">
+                                <li><a class="dropdown-item" href="sp_es.html#background">Background</a></li>
+                                <li><a class="dropdown-item" href="sp_es.html#spEfforts">Efforts</a></li>
+                                <li><a class="dropdown-item" href="sp_es.html#pastEvents">Past Events</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <section class="progress-container">
+            <div class="progress scrollingProgress" id="scroll-progress"></div>
+        </section>
+    </div>
+
+    <!-- --------------- carousel banner--------------- -->
+    <section id="bannerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active bannerItem" data-bs-interval="10000">
+                <img src="../image/SP1.jpg" class="bannerImg d-block w-100" alt="...">
+                <!-- https://www.sp.edu.sg/sp/about-sp/welcome-to-sp -->
+            </div>
+            <div class="carousel-item bannerItem" data-bs-interval="10000">
+                <img src="../image/SP2.jpg" class="bannerImg d-block w-100" alt="...">
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sp.edu.sg%2F&psig=AOvVaw1LbWqUI4lb0muQBVvtk0m7&ust=1689910561207000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPCqwcetnIADFQAAAAAdAAAAABAQ -->
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </section>
+
+
+    <!-- -------------------- TITLE -------------------- -->
+    <div class="my-3 mx-5">
+        <strong class="h1 sideBorder"><span class="SP">S</span>ingapore <span class="SP">P</span>olytechnic</strong>
+    </div>
+
+    <!-- ----------------Background---------------- -->
+    <article>
+        <div class="container my-3 text-center title" id="background">
+            <h2><span class="SP">SP</span>'s Background</h2>
+        </div>
+
+        <!-- -------------------- carousel card -------------------- -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    
+                    <div id="backgroundCarousel" class="carousel slide carousel-fade mx-auto" data-bs-touch="false" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <!-- card item 1 -->
+                            <div class="carousel-item active backgroundItem">
+
+                                <div class="card backgroundCard">
+                                    <div class="img-container">
+                                        <img src="../image/oldsp.jpg" class="card-img-top oldsp imgimg" alt="oldsp">
+                                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.roots.gov.sg%2Fen%2Fplaces%2Fplaces-landing%2FPlaces%2Fsurveyed-sites%2FFormer-Bestway-Building&psig=AOvVaw2smLXhLA3-Ggfl0vQtQ9I2&ust=1685072346678000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOi_qOfFj_8CFQAAAAAdAAAAABAN -->
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><b><u>Before</u></b></h5>
+                                        <p class="card-text">
+                                            <b>Singapore Polytechnic</b> was first opened in late <b>1954</b> where the place was 
+                                            mudande and lacked of greenires and sustainabilities. The school was in this state for 
+                                            the next few decades.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-item backgroundItem">
+                                <!-- card item 2 -->
+                                <div class="card backgroundCard">
+                                    <div class="img-container">
+                                        <img src="../image/nowsp.jpg" class="card-img-top imgimg" alt="nowsp">
+                                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fsmapse.com%2Fsingapore-polytechnic-singapore-polytechnic-institute%2F&psig=AOvVaw0iclWnndv8ohxyc6tfDoNU&ust=1685072036879000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIDdt9PEj_8CFQAAAAAdAAAAABAO -->
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><b><u>After</u></b></h5>
+                                        <p class="card-text">
+                                            Since <b>1979</b>, there have been numerous times where SP tries to create a more greener and 
+                                            sustainable place. Now, SP has been greener with lots of lush plants and trees planted through 
+                                            the forest.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                          
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#backgroundCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#backgroundCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- SP brief -->
+                <div class="col-md-6 col-sm-12 mt-3">
+                    <div>
+                        <strong class="sideBorder h3">About <span class="SP">SP</span></strong>
+                    </div><br>
+
+                    <p>
+                        <b><a href="https://sp.edu.sg/">Singapore Polytechnic</a></b> is the oldest 
+                        Polytechnics in <b>Singapore</b>, founded in the year <b>1954</b>, it played 
+                        a pioneering role in shaping technical and vocational education in Singapore.
+                        Over the years, SP has continued to uphold its legacy by providing quality 
+                        education and practical training across a wide range of disciplines. As the 
+                        trailblazer among polytechnics, Singapore Polytechnic has a longstanding tradition 
+                        of producing skilled graduates who contribute significantly to Singapore's workforce 
+                        and economic development.
+                    </p>
+
+                    <!-- sp info table -->
+                    <table class="table table-borderless table-hover color-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="px-3">#</th>
+                                <th scope="col">Role</th>
+                                <th scope="col"></th>
+                                <th scope="col" class="ps-5">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-3">1</td>
+                                <td>Chairperson</td>
+                                <td>:</td>
+                                <td class="ps-5">Janet Ang</td>
+                            </tr>
+                            <tr>
+                                <td class="table-even px-3">2</td>
+                                <td class="table-even">Principal</td>
+                                <td class="table-even">:</td>
+                                <td class="table-even ps-5">Soh Wai Wah</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3">3</td>
+                                <td>Location</td>
+                                <td>:</td>
+                                <td class="ps-5">
+                                    <i class="bi bi-geo-alt-fill redIcon"></i>
+                                    500 Dover Road, Singapore 139651
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-even px-3">4</td>
+                                <td class="table-even">Campus</td>
+                                <td class="table-even">:</td>
+                                <td class="table-even ps-5">38 ha (94 acres)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <!-- ----------------SP efforts--------------------- -->
+    <article>
+        <div class="container title text-center mt-4" id="spEfforts">
+            <h2><span class="SP">SP</span> Efforts</h2>
+        </div>
+
+        <div class="container">
+            <!-- row 1 -->
+            <div class="row">
+
+                <!-- collum 1 -->
+                <div class="col-md-4 col-sm-6 mx-auto my-5">
+                    <div class="effortContainer mx-auto">
+
+                        <div class="card effortDescription text-center">
+                            <div class="card-body">
+                                <h5 class="card-title"><u><b>Green Mark Platinum Buildings</b></u></h5><br>
+                                <p class="card-text">
+                                    Some of the buildings in SP have been certified with
+                                    Green Mark Platinum with on-going efforts to certify all
+                                    22 buildings in SP by 2025.
+                                </p>
+                                <a href="#" class="card-link">Read more &gt;&gt;</a>
+                            </div>
+                        </div>
+
+                        <div class="card effortIMG">
+                            <img src="../image/buildings.png" class="card-img-top mx-auto my-3" alt="...">
+                            <!-- https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters -->
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><u><b>Green Mark Platinum Buildings</b></u></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- collum 2 -->
+                <div class="col-md-4 col-sm-6 mx-auto my-5">
+                    <div class="effortContainer mx-auto">
+
+                        <div class="card effortDescription text-center">
+                            <div class="card-body">
+                                <h5 class="card-title"><u><b>Species of Flora</b></u></h5><br>
+                                <p class="card-text">
+                                    SP is a lush campus and has got an incredible biodiversity 
+                                    of plants including the majestic Brown Wooly Fig Heritage 
+                                    Trees found near the Food Court 1.
+                                </p>
+                                <a href="#" class="card-link">Read more &gt;&gt;</a>
+                            </div>
+                        </div>
+
+                        <div class="card effortIMG">
+                            <img src="../image/flora.png" class="card-img-top mx-auto my-3" alt="...">
+                            <!-- https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters -->
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><u><b>Species of Flora</b></u></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- collum 3 -->
+                <div class="col-md-4 col-sm-6 mx-auto my-5">
+                    <div class="effortContainer mx-auto">
+
+                        <div class="card effortDescription text-center">
+                            <div class="card-body">
+                                <h5 class="card-title"><u><b>Water Dispensers</b></u></h5>
+                                <p class="card-text">
+                                    SP has placed numerous water dispensers around the campus
+                                    encouraging students and staffs to use water dispensers. 
+                                    They have also ceased the use of plastic bottled water at 
+                                    the events.
+                                </p>
+                                <a href="#" class="card-link">Read more &gt;&gt;</a>
+                            </div>
+                        </div>
+
+                        <div class="card effortIMG">
+                            <img src="../image/water-dispensers.png" class="card-img-top mx-auto my-3" alt="...">
+                            <!-- https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters -->
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><u><b>Water Dispensers</b></u></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- row 1.2 -->
+
+                <!-- collum 1 -->
+                <div class="col-md-4 col-sm-6 mx-auto my-5">
+                    <div class="effortContainer mx-auto">
+
+                        <div class="card effortDescription text-center">
+                            <div class="card-body">
+                                <h5 class="card-title"><u><b>Smart Systems</b></u></h5><br>
+                                <p class="card-text">
+                                    Many facilities on campus are monitored with smart sensors to 
+                                    track human traffic and monitor air quality for the healh and 
+                                    well-being of students and staff.
+                                </p>
+                                <a href="#" class="card-link">Read more &gt;&gt;</a>
+                            </div>
+                        </div>
+
+                        <div class="card effortIMG">
+                            <img src="../image/sensors.png" class="card-img-top mx-auto my-3" alt="...">
+                            <!-- https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters -->
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><u><b>Smart Systems</b></u></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- collum 2 -->
+                <div class="col-md-4 col-sm-6 mx-auto my-5">
+                    <div class="effortContainer mx-auto">
+
+                        <div class="card effortDescription text-center">
+                            <div class="card-body">
+                                <h5 class="card-title"><u><b>Smart Offices</b></u></h5><br>
+                                <p class="card-text">
+                                    SP has enhanced the work enviorment with good quality air and
+                                    temperature sensors in their offices for the health and well-being
+                                    of their staff.
+                                </p>
+                                <a href="#" class="card-link">Read more &gt;&gt;</a>
+                            </div>
+                        </div>
+
+                        <div class="card effortIMG">
+                            <img src="../image/smart-offices-icons.png" class="card-img-top mx-auto my-3" alt="...">
+                            <!-- https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters -->
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><u><b>Smart Offices</b></u></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- collum 3 -->
+                <div class="col-md-4 col-sm-6 mx-auto my-5">
+                    <div class="effortContainer mx-auto">
+
+                        <div class="card effortDescription text-center">
+                            <div class="card-body">
+                                <h5 class="card-title"><u><b>DFCCC</b></u></h5>
+                                <p class="card-text">
+                                    The CCC module prepares the students for the green economy 
+                                    by teaching lessons such as <a href="https://sdgs.un.org/goals"><b>UNSDGs</b></a> 
+                                    which they then learn to develop sustainability solutions for real-life issues.
+                                </p>
+                                <a href="#" class="card-link">Read more &gt;&gt;</a>
+                            </div>
+                        </div>
+
+                        <div class="card effortIMG">
+                            <img src="../image/curriculum.png" class="card-img-top mx-auto mt-3" alt="...">
+                            <!-- https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters -->
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><u><b>Diplomas Featuring Common Core Curriculum(CCC)</b></u></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- ------------------past events------------------- -->
+    <article class="mb-4">
+        <div class="container title text-center my-3" id="pastEvents">
+            <h2><span class="SP">SP</span>'s Past Events</h2>
+        </div>
+
+        <!-- event container -->
+        <div class="container">
+            <div class="row my-3">
+                <div class="col-12 text-center">
+                    <strong class="h3 text-decoration-underline">Go Green SP</strong>
+                </div>
+            </div>
+
+            <!-- -------------------- go green sp event -------------------- -->
+            <div class="row">
+                <div class="col-md-6 col-sm-12 my-auto">
+                    <div class="img-container eventIMG">
+                        <a href="https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters/go-green-sp"><img class="imgimg img-fluid" src="../image/go-green-sp.jpg" alt="Go Green SP"></a>
+                        <!-- https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters/go-green-sp -->
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 my-auto">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>
+                                <b><i class="bi bi-geo-alt-fill redIcon"></i></b><a href="https://www.google.com/maps/place/Singapore+Polytechnic/@1.3097757,103.7726786,17z/data=!3m2!4b1!5s0x31da1a9068dba003:0xa6ce508a5a9f2e25!4m6!3m5!1s0x31da1a602ff17c15:0xa9545dd23993859e!8m2!3d1.3097757!4d103.7775495!16zL20vMDZ2dmxf?entry=ttu"> Singapore Polytechnic, 500 Dover Road, Singapore 139651</a><br>
+                                <b><i class="bi bi-calendar-check"></i></b> 5 July 2023, 3:00pm - 5:00pm<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>
+                                The <b>Go Green SP</b> was held on Wdnesday, <b>5 July 2023</b> PCEO <b>Mr Soh Wai Wah</b> 
+                                led an SP pledge with students and staff for their commitment and support towards the 
+                                nation-wide sustainability movement. <b>Dr. Amy Khor</b> also led a panel discussion on Singapore's
+                                commitment to achieve <b>net zero emission by 205</b>. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------------- Sg clean day event -------------------- -->
+            <div class="row my-3">
+                <div class="col-12 text-center">
+                    <strong class="h3 text-decoration-underline">Sg Clean Day</strong>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12 my-auto">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>
+                                <b><i class="bi bi-geo-alt-fill redIcon"></i></b><a href="https://www.google.com/maps/place/F1+Pit+Building/@1.2913634,103.8617029,17z/data=!3m1!4b1!4m6!3m5!1s0x31da19aa48e79333:0x17e2c86275137233!8m2!3d1.2913634!4d103.8638916!16s%2Fg%2F1tfh250c?entry=ttu"> F1 Pit Building, 1 Republic Boulevard, Singapore 038975</a><br />
+                                <b><i class="bi bi-calendar-check"></i></b> 13 May 2023, 9:00am - 10:30am<br />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>
+                                It was a national cleaning day when mulitple organisations join hands and try to make 
+                                signapore a cleaner place. Altough it the event was held by other organisation, a good portion of the people
+                                that camme to help was from '<a href="https://www.sp.edu.sg/"><b>Singapore Polytechnic</b></a>'.             
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 my-auto">
+                    <div class="img-container eventIMG">
+                        <a href="https://www.klook.com/en-SG/event-detail/101015674-2023-sg-clean-day/"><img class="imgimg img-fluid" src="../image/spcleaning.webp" alt="Sg Clean Day"></a>
+                        <!-- https://www.bykido.com/blogs/events-and-activities/experience-the-largest-sg-clean-day-in-may-2023 -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </article>
+
+   <!-- -------------------- Footer -------------------- -->
+    <div class="container">
+    <ul class="pagination justify-content-center my-2">
+        <li class="footNav page-item"><a class="page-link" href="index.html">1</a></li>
+        <li class="footNav page-item"><a class="page-link" href="opinion.html">2</a></li>
+        <li class="footNav-active page-item"><a class="page-link" href="#">3</a></li>
+        <li class="footNav page-item"><a class="page-link" href="feedback.html">4</a></li>
+    </ul>
+    </div>
+
+<!-- -------------------- Contact Me -------------------- -->
+    <footer>
+    <div class="container-fluid">
+        <div class="row mx-auto" id="contactRow1">
+            <div class="col-sm-12">
+                <div id="contactTitle">
+                    <p class="h2" id="contactMe">Contact Me</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-middle py-2">
+            <div class="offset-md-3 col-md-1 offset-sm-3 col-sm-1 py-1">
+                <a href="https://www.instagram.com/" class="iconLink">
+                    <img id="instagram" src="../image/instagram.png" alt="instagram">
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fpng-zuyjk&psig=AOvVaw1gXL0JZTvu-YVQefkqaNO4&ust=1684680553061000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMjtlqGShP8CFQAAAAAdAAAAABAE -->
+                    <span class="iconText">@kevin_lin0506</span>
+                </a>
+            </div>
+            <div class="offset-md-1 col-md-1 offset-sm-4 col-sm-1 py-1">
+                <a href="https://www.facebook.com/MinThetKhine050605" class="iconLink">
+                    <img id="facebook" src="../image/facebook.png" alt="facebook">
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freeiconspng.com%2Fimages%2Ffacebook-logo-png&psig=AOvVaw2pVRtEDy187WQInWycndI0&ust=1684680442785000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCND3le2RhP8CFQAAAAAdAAAAABAT -->
+                    <span class="iconText">@KevinLin</span>
+                </a>
+            </div>
+            <div class="offset-md-1 col-md-1 offset-sm-3 col-sm-1 py-1">
+                <a href="https://twitter.com/home" class="iconLink">
+                    <img id="twitter" src="../image/twitter.png" alt="twitter">
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepnglogos.com%2Fpics%2Flogo-twitter-png&psig=AOvVaw3tWiVdf8_dro8NUsIiXQ6i&ust=1684680275808000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPDan52RhP8CFQAAAAAdAAAAABAE -->
+                    <span class="iconText">@ProjektKevin</span>
+                </a>
+            </div>
+            <div class="offset-md-1 col-md-1 offset-sm-4 col-sm-1 py-1">
+                <a href="https://www.pinterest.com/" class="iconLink">
+                    <img id="pinterest" src="../image/pinterest.png" alt="pinterest">
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Ffreebiesupply.com%2Flogos%2Fpinterest-logo-2%2F&psig=AOvVaw1J562ZthR_Opi5mgAzJeo2&ust=1684680150375000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIDUn-GQhP8CFQAAAAAdAAAAABAE -->
+                    <span class="iconText">@minthetkhine05</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    </footer>
+
+</body>
+</html>

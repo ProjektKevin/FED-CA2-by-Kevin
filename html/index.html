@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    CA2 – Interactive Website
+    
+    Page of Self Introduction
+    Author: Min Thet Khine
+    Date:   
+
+    Filename: index.html
+-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Introduction</title>
+    <link href="../css/stylesheet.css" rel="stylesheet">
+    <link href="../css/index_style.css" rel="stylesheet">
+    <script src="../js/clock.js" async></script>
+    <script src="../js/progressJS.js" ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+</head>
+
+<body id="body">
+    <header>
+        <div class="container-fluid text-center" >
+            <p class="">Min Thet Khine &#x2022; Kevin Lin &#x2022; DIT/FT/1A/02</p>
+        </div>
+    </header>
+
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-md py-0">
+            <div class="container-fluid">
+
+                <i class="bi bi-house-door-fill h4"></i>
+                <!-- -------------------- hamburger -------------------- -->
+                <a class="navbar-brand h2" href="index.html" id="portfolio">Kevin's Portfolio</a>
+
+                <!-- date & time -->
+                <div class="container-fluid " style="max-width: fit-content; margin-left: 0%; height: 100%;">
+                    <div id="clock">-</div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- -------------------- Main Navs -------------------- -->
+                <div class="collapse navbar-collapse" id="mainNav" style="max-width: fit-content;">
+                    <ul class="navbar-nav ms-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html" id="aboutMe">
+                                About Me
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="opinion.html" id="sustainabilityDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                My Sustainabilty
+                            </a>
+                            <ul class="dropdown-menu" id="sustainabiltyMenu" aria-labelledby="sustainabilityDropdown">
+                                <li><a class="dropdown-item" href="opinion.html#opinionTitle">My Opinion</a></li>
+                                <li><a class="dropdown-item" href="opinion.html#myGoals">Personal Goals</a></li>
+                                <li><a class="dropdown-item" href="opinion.html#generator">Task Generator</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="sp_es.html" id="effortsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                SP Efforts
+                            </a>
+                            <ul class="dropdown-menu" id="effortMenu" aria-labelledby="effortsDropdown">
+                                <li><a class="dropdown-item" href="sp_es.html#background">Background</a></li>
+                                <li><a class="dropdown-item" href="sp_es.html#spEfforts">Efforts</a></li>
+                                <li><a class="dropdown-item" href="sp_es.html#pastEvents">Past Events</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <section class="progress-container">
+            <div class="progress scrollingProgress" id="scroll-progress"></div>
+        </section>
+    </div>
+
+
+ <!-- ------------------About Me------------------ -->
+    <article>
+        <div class="container text-center my-2 title">
+            <h1>About Me</h1>
+        </div>
+
+        <!-- -------------------- about me table -------------------- -->
+        <div class="container text-center my-2">
+            <div class="row mx-1">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+                        <table class="table table-sm text-start table-borderless my-3 color-table" >
+                            <thead>
+                                <tr>
+                                    <th class="px-2">#</th>
+                                    <th>Property Name</th>
+                                    <th></th>
+                                    <th>Property Value</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="px-2">1</td>
+                                    <td>Name</td>
+                                    <td class="px-4">:</td>
+                                    <td>Min Thet Khine</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-even px-2">2</td>
+                                    <td class="table-even">Occupation</td>
+                                    <td class="table-even px-4">:</td>
+                                    <td class="table-even">Full time student</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">3</td>
+                                    <td>School Name</td>
+                                    <td class="px-4">:</td>
+                                    <td><b><a href="https://www.sp.edu.sg/">Singapore Polytechnic</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td class="table-even px-2">4</td>
+                                    <td class="table-even">Course/class</td>
+                                    <td class="table-even px-4">:</td>
+                                    <td class="table-even">DIT/FT/1A/02</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">5</td>
+                                    <td>Birthday Date </td>
+                                    <td class="px-4">:</td>
+                                    <td>5<sup>th</sup> June 2005</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-even px-2">6</td>
+                                    <td class="table-even">Gender</td>
+                                    <td class="table-even px-4">:</td>
+                                    <td class="table-even">Male <i class="bi bi-gender-male"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row">
+                        <div class="mt-3">
+                            <!-- -------------------- summary -------------------- -->
+                            <div class="mb-3">
+                                <u class="h3">Life Summary</u>
+                            </div>
+                            <div>
+                                <p>My life has been constantly changing, from my state of health to ever-changing schools.
+                                    During my primary and secondary years, I changed a total of 4 schools which later ended
+                                    in just attending tuition. But now, I'm attending in <b><a href="https://www.sp.edu.sg/">Singapore Polytechnic</a></b>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="card mx-auto my-3" id="MyPicturecard">
+                        <div class="img-container mt-2 mx-4" id="MyPicture">
+                            <img class = "imgimg" id="imgMyPicture" src="../image/Me-min.JPG" alt="" data-bs-toggle="tooltip" data-bs-placement="right" title="Hello!"/>
+                            <!-- me.jpg is taken myself -->
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">On my way to work, April 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+<!-- ------------------My Values------------------ -->
+    <article>
+        <div class="container text-center title">
+            <h1> My Values </h1>
+        </div>
+
+        <!-- -------------------- value wordcloud -------------------- -->
+        <section class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="img-container my-3" id="wordcloud-container">
+                        <img class="img-fluid imgimg" id="wordcloud" src="../image/wordcloud.png" atl="">
+                        <!-- wordcloud.png was created myself -->
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+
+                    <!-- -------------------- value description -------------------- -->
+                    <div class = "my-3 valueDescription">
+                        <p>
+                            My core values revolve around integrity, respect, trust, responsibility, discipline,
+                            loyalty, and adventure. <b>Intergrity</b> , <b>discipline</b> and <b>responsibility</b>
+                            makes me a better person while <b>trust</b> and <b>respect</b> allows me to make unwavering
+                            friendships. <b>Loyalty</b> is a cornerstone of my character, as I value steadfast support and unwavering 
+                            commitment. Lastly, embracing <b>adventure</b> allows me to explore new things and be more open-minded.
+                        </p>
+        
+                        <table class="table table-sm table-borderless color-table">
+                            <tr>
+                                <td class="table-even">1.&nbsp; Integrity</td>
+                                <td class="table-even">2.&nbsp; Respect</td>
+                            </tr>
+                            <tr>
+                                <td>3.&nbsp; Responsibility</td>
+                                <td>4.&nbsp; Trust</td>
+                            </tr>
+                            <tr>
+                                <td class="table-even">5.&nbsp; Discipline</td>
+                                <td class="table-even">6.&nbsp; Adventure</td>
+                            </tr>
+                            <tr>
+                                <td>7.&nbsp; Loyalty</td>
+                            </tr>
+                        </table>
+
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </article>
+
+<!-- ------------------My interessts------------------ -->
+    <article>
+        <div class="container text-center title">
+            <h1>My interests</h1>
+        </div>
+
+        <section class="container my-3">
+            <!-- -------------------- interest's nav tab -------------------- -->
+            <div class="nav nav-tabs" id="myInterestTab" role="tablist">
+                <button class="nav-link active" id="food-tab" data-bs-toggle="tab" data-bs-target="#food" type="button" role="tab" aria-controls="food" aria-selected="true">
+                    Food
+                </button>
+                <button class="nav-link" id="anime-tab" data-bs-toggle="tab" data-bs-target="#anime" type="button" role="tab" aria-controls="anime" aria-selected="false">
+                    Anime
+                </button>
+                <button class="nav-link" id="manga-tab" data-bs-toggle="tab" data-bs-target="#manga" type="button" role="tab" aria-controls="manga" aria-selected="false">
+                    Manga
+                </button>
+                <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music" type="button" role="tab" aria-controls="music" aria-selected="false">
+                    Music
+                </button>
+            </div>
+    
+            <div class="tab-content text-center py-1" id="foodContent">
+                <div class="tab-pane fade show active" id="food" role="tabpanel" aria-labelledby="food-tab">
+                    <!-- food (nav-tab-1)-->
+                    <div class="my-3">
+                        <strong class="h3">My 5 top favourite food:</strong>
+                    </div>
+
+                    <div id="foodCarousel" class="carousel slide mx-auto my-3" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="3" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="../image/sushi.jpg" class="d-block w-100 carousel-image img-thumbnail" alt="Sushi">
+                                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.1zoom.me%2Fen%2Fwallpaper%2F534106%2Fz2506.8%2F&psig=AOvVaw0_M0rOnYF8bBj3TsX5g-73&ust=1690389660662000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNDTvKumqoADFQAAAAAdAAAAABAE -->
+                                <div class="carousel-caption d-sm-block">
+                                    <h5>1. Sushi</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="../image/sandwich.webp" class="d-block w-100 carousel-image img-thumbnail" alt="Sandwich">
+                                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.123rf.com%2Fphoto_14970933_closeup-of-a-ham-and-swiss-cheese-sandwich-on-whole-wheat-bread.html&psig=AOvVaw3lU-oLXtsvWxpcwVoNOxlX&ust=1690387265294000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKjCkJimqoADFQAAAAAdAAAAABAE -->
+                                <div class="carousel-caption d-sm-block">
+                                    <h5>2. Sandwich</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="../image/curry.jpg" class="d-block w-100 carousel-image img-thumbnail" alt="Curry">
+                                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.agefotostock.com%2Fage%2Fen%2Fdetails-photo%2Ftraditional-japanese-food-curry-and-rice-close-up-on-a-plate-horizontal%2FESY-041360048&psig=AOvVaw02HwkK7Skm7Labeb-DD7HZ&ust=1690388161754000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJDn3YmmqoADFQAAAAAdAAAAABAE -->
+                                <div class="carousel-caption d-sm-block">
+                                    <h5>3. Curry</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="../image/friedrice.jpg" class="d-block w-100 carousel-image img-thumbnail" alt="Fried Rice">
+                                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Fphoto%2F24000571-close-up-of-food-photography-spicy-egg-fried-rice-with-black-background-generative-ai&psig=AOvVaw01SK9BeyLA2bIZsFROSXpC&ust=1690388335985000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLiK7LOhqoADFQAAAAAdAAAAABA0 -->
+                                <div class="carousel-caption d-sm-block">
+                                    <h5>4. Fried Rice</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="../image/ramen.jpg" class="d-block w-100 carousel-image img-thumbnail" alt="Ramen">
+                                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Framen-noodles&psig=AOvVaw2Xd4dhIIlZUte__lYpmnl9&ust=1690389856397000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCICPhImnqoADFQAAAAAdAAAAABAE -->
+                                <div class="carousel-caption d-sm-block">
+                                    <h5>5. Ramen</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                    </div>
+
+                </div>
+                
+                <div class="tab-pane fade" id="anime" role="tabpanel" aria-labelledby="anime-tab">
+                    <!-- anime (nav-tab-2)-->
+                    <section>
+                        <div class="container subtitle my-3">
+                            <strong class="h2"><u>Anime</u></strong>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                
+                                <div class="col-md-6 col-sm-12 justify-content-center my-3">
+                                    <div class="anime-container">
+                                        <div class="animeImgContainer">
+                                            <img class="animeImg img-fluid mx-auto" src="../image/re_zero.jpg" alt="Your Image">
+                                            <!-- https://www.mobygames.com/game/158111/rezero-starting-life-in-another-world-the-prophecy-of-the-throne/cover/group-285573/cover-713896/ -->
+                                        </div>
+
+                                        <div class="anime-description mx-auto">
+                                            <div class="title h3">RE:zero</div>
+                                            <div>
+                                                <p id="anime-text">
+                                                    It is about a teenage gamer, <b><a href="https://rezero.fandom.com/wiki/Natsuki_Subaru">
+                                                    Natsuki Subaru</a></b>, who was thrown into a mysterious RPG styled world. As he searches 
+                                                    for the heroine who he assumes summoned him.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 my-3">
+                                    <div class="text-start">
+                                        <p class="h4">Favourite genres</p>
+                                        <p>
+                                            <ol>
+                                                <li>Isekai</li>
+                                                <li>Adventure</li>
+                                                <li>Fantasy</li>
+                                                <li>Action</li>
+                                                <li>Magic</li>
+                                            </ol>                                          
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 my-3">
+                                    <div class="text-start">
+                                        <p class="h4">Favourite Animes</p>
+                                        <p>
+                                            <ol>
+                                                <li><a href="https://rezero.fandom.com/wiki/Re:Zero_Wiki">Re:zero</a></li>
+                                                <li><a href="https://mushokutensei.fandom.com/wiki/Mushoku_Tensei_Wiki">Mushoku tensei</a></li>
+                                                <li><a href="https://konosuba.fandom.com/wiki/Kono_Subarashii_Sekai_ni_Shukufuku_wo!_Wiki">Konosuba</a></li>
+                                                <li><a href="https://myheroacademia.fandom.com/wiki/My_Hero_Academia_Wiki">My Hero Academia</a></li>
+                                                <li><a href="https://jojo.fandom.com/wiki/JoJo%27s_Bizarre_Adventure">Jojo's bizarre adventure</a></li>
+                                            </ol>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+                <div class="tab-pane fade" id="manga" role="tabpanel" aria-labelledby="manga-tab">
+                    <!-- manga (nav-tab-3)-->
+                    <section>
+                        <div class="my-3">
+                            <strong class="h2"><u>Manga</u></strong>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 my-3">
+                                    <div class="text-start px-5">
+                                        <p class="h4">Favourite genres</p>
+                                        <p>
+                                            <ol>
+                                                <li>Isekai</li>
+                                                <li>Thriller</li>
+                                                <li>Fantasy</li>
+                                                <li>Action</li>
+                                                <li>Sci-Fi</li>
+                                            </ol>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 my-3">
+                                    <div class="text-start px-5">
+                                        <p class="h4">Favourite Mangas:</p>
+                                        <p>
+                                            <ol>
+                                                <li><a href="https://otherside-picnic.fandom.com/wiki/Otherside_Picnic_Wiki">Urasekai Picnic</a></li>
+                                                <li><a href="https://omniscient-readers-viewpoint.fandom.com/wiki/Omniscient_Reader%27s_Viewpoint">Omniscient Reader's Viewpoint</a></li>
+                                                <li><a href="https://solo-leveling.fandom.com/wiki/Solo_Leveling">Solo Leveling</a></li>
+                                                <li><a href="https://a-returners-magic-should-be-special.fandom.com/wiki/Desir_Arman">A Returner's Magic Should Be Special</a></li>
+                                                <li><a href="https://jigokuraku.fandom.com/wiki/Jigokuraku_Wiki">Hell's Paradise</a></li>
+                                            </ol>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12 justify-content-center my-3">
+                                    <div class="manga-container">
+                                        <div class="mangaImgContainer">
+                                            <img class="mangaImg img-fluid mx-auto" src="../image/urasekai_picnic.jpg" alt="Your Image">
+                                            <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zerochan.net%2F2378313&psig=AOvVaw2ZZzvioHnOCzi5fE9CQMMj&ust=1690527953883000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMihxMKproADFQAAAAAdAAAAABAE -->
+                                        </div>
+                                        <div class="manga-description mx-auto">
+                                            <div class="title h3">Urasekai Picnic</div>
+                                            <div>
+                                                <p id="manga-text">
+                                                    It's about two girls, <a href="https://otherside-picnic.fandom.com/wiki/Sorawo_Kamikoshi"><b>Sorawo</b>
+                                                    </a> and <a href="https://otherside-picnic.fandom.com/wiki/Toriko_Nishina"><b>Toriko</b></a>, stumbling 
+                                                    upon a mysterious world also known as "Otherside". They then traverse the world filled with dangerous 
+                                                    entities while looking for their friend, <a href="https://otherside-picnic.fandom.com/wiki/Satsuki_Uruma">
+                                                    <b>Satsuki</b></a>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- music (nav-tab-4) -->
+                <div class="tab-pane fade" id="music" role="tabpanel" aria-labelledby="music-tab">
+
+                    <section>
+                        <div class="my-3">
+                            <strong class="h2"><u>Music</u></strong>
+                        </div>
+
+                        <div class="container my-3">
+                            <div class="row">
+                                <div class="offset-md-3 col-md-3 col-sm-6 col-12">
+                                    <div class="text-start">
+                                        <p class="h4">Favourite Singers</p>
+                                        <p>
+                                           <ol>
+                                                <li>IRyS</li>
+                                                <li>Mori Calliope</li>
+                                                <li>Hakos Baelz</li>
+                                           </ol>    
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-12">
+                                    <div class="text-start">
+                                        <p class="h4">Favourite Music Genres</p>
+                                        <p>
+                                            <ol>
+                                                <li>J-pop</li>
+                                                <li>Pop-rap</li>
+                                                <li>Country</li>
+                                            </ol>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <section>
+                                    <!-- accordion of musics -->
+                                    <div class="accordion mx-auto my-3" id="musicAccordion">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="favouriteSong">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#favCollapse" aria-expanded="true" aria-controls="favCollapse">
+                                                    All time favourite
+                                                </button>
+                                            </h2>
+                                            <div id="favCollapse" class="accordion-collapse collapse show" aria-labelledby="favouriteSong" data-bs-parent="#musicAccordion">
+                                                <div class="accordion-body accb">
+                                                    <iframe style="border-radius:10px" src="https://open.spotify.com/embed/track/5QXpY51wFeGQ51WdPNMyru?utm_source=generator" width="100%" height="250" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="IRySaccordion">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#IRySCollapse" aria-expanded="false" aria-controls="IRySCollapse">
+                                                    IRyS
+                                                </button>
+                                            </h2>
+                                            <div id="IRySCollapse" class="accordion-collapse collapse" aria-labelledby="IRySaccordion" data-bs-parent="#musicAccordion">
+                                                <div class="accordion-body accb">
+                                                    <iframe style="border-radius:10px" src="https://open.spotify.com/embed/playlist/0QDPn4lbTOdSCUZEpT7K5k?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="moriAccordion">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#moriCollapse" aria-expanded="false" aria-controls="moriCollapse">
+                                                    Mori Calliope
+                                                </button>
+                                            </h2>
+                                          <div id="moriCollapse" class="accordion-collapse collapse" aria-labelledby="moriAccordion" data-bs-parent="#musicAccordion">
+                                                <div class="accordion-body accb">
+                                                    <iframe style="border-radius:10px" src="https://open.spotify.com/embed/playlist/3EtSlYyxdjQ12ftQpEu929?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+            </div>            
+        </section>
+    </article>
+
+    <!-- ------------------My Personality------------------ -->
+    <article class="mb-2">
+        <div class="container title text-center">
+            <h1>My Personality</h1>
+        </div>
+
+        <!-- short description -->
+        <div class="container my-2">
+            <h2><span class="sideBar"><strong>| </strong></span>ENTJ</h2>
+            <p>
+                According to  '<b><a href="https://www.16personalities.com/">16 Personality test</a></b>' 
+                website, I am a <b><a href="https://www.16personalities.com/entj-personality">commander</a></b>. 
+                As the website suggest, I am <b>hardworking</b> and <b>serious</b> when it comes to academics 
+                and I usually plan out for the long trem. However, at times, I can be a very <b>friendly</b> 
+                and <b>caring</b> person. Finally, I am <b>adventurous</b> as I am always up to try new things. 
+            </p>
+        </div>
+    </article>
+
+    <!-- --------------FAQs---------------- -->
+    <aside class="text-center my-5">
+        <button class="btn FAQbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#FAQoffcanvas" aria-controls="FAQoffcanvas">
+            Frequently Asked questions &gt;&gt;
+        </button>
+
+        <!-- -------------------- FAQ content -------------------- -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="FAQoffcanvas" aria-labelledby="FAQoffcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 id="FAQoffcanvasLabel">FAQs</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- -------------------- FAQ body -------------------- -->
+            <div class="offcanvas-body">
+                <article class="text-start">
+                    <blockquote class="blockquote">
+                        <h5>Q: Are you from China?</h5>
+                        A:<span class="answers">
+                             No, I am not. Altough both my grandparents were from China, I am born in <a href="https://www.google.com/maps/place/Myanmar+(Burma)/@18.9998175,96.6710399,5z/data=!3m1!4b1!4m6!3m5!1s0x305652a7714e2907:0xba7b0ee41c622b11!8m2!3d21.916221!4d95.955974!16zL20vMDR4bl8?entry=ttu"><b>Myanmar</b></a>.
+                        </span>
+                    </blockquote><br>
+
+                    <blockquote class="blockquote">
+                        <h5>Q: Do you speak Chinese?</h5>
+                        A:<span class="answers">
+                             NO! Sadly, I only know how to speak in 2 languages, <b>Burmese</b> and <b>English</b>
+                        </span>.
+                    </blockquote><br>
+
+                    <blockquote class="blockquote">
+                        <h5>Q: Are you <b>Single?</b></h5>
+                        A:<span class="answers">
+                             <b>YES I AM!</b> If you are interested, contact me on <s>+65 10101010</s>
+                        </span>.
+                    </blockquote><br>
+
+                    <blockquote class="blockquote">
+                        <h5>Q: Do you have any sibiling(s)?</h5>
+                        A:<span class="answers">
+                            Yes, I do actually. I have one elder brother who is studying busniess in <a href="https://nus.edu.sg/"><b>NUS</b></a>
+                        </span>.
+                    </blockquote><br>
+
+                    <figure>
+                        <blockquote class="blockquote">
+                            <h5>Q: What is your favourite quote?</h5>
+                            A:<span class="answers"><q>One Day or Day One, you decide.</q></span>
+
+                        </blockquote>
+                        <figcaption class="blockquote-footer text-end">
+                            Dwayne Douglas Johnson
+                        </figcaption>
+                    </figure>
+                </article>
+
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- -------------------- Footer Nav -------------------- -->
+    <div class="container">
+        <ul class="pagination justify-content-center my-2">
+            <li class="footNav-active page-item"><a class="page-link" href="#">1</a></li>
+            <li class="footNav page-item"><a class="page-link" href="opinion.html">2</a></li>
+            <li class="footNav page-item"><a class="page-link" href="sp_es.html">3</a></li>
+            <li class="footNav page-item"><a class="page-link" href="feedback.html">4</a></li>
+        </ul>
+    </div>
+
+    <!-- -------------------- Contact Me -------------------- -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row mx-auto" id="contactRow1">
+                <div class="col-sm-12">
+                    <div id="contactTitle">
+                        <p class="h2" id="contactMe">Contact Me</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-middle py-2">
+                <div class="offset-md-3 col-md-1 offset-sm-3 col-sm-1 py-1">
+                    <a href="https://www.instagram.com/" class="iconLink">
+                        <img id="instagram" src="../image/instagram.png" alt="instagram">
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fpng-zuyjk&psig=AOvVaw1gXL0JZTvu-YVQefkqaNO4&ust=1684680553061000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMjtlqGShP8CFQAAAAAdAAAAABAE -->
+                        <span class="iconText">@kevin_lin0506</span>
+                    </a>
+                </div>
+                <div class="offset-md-1 col-md-1 offset-sm-4 col-sm-1 py-1">
+                    <a href="https://www.facebook.com/MinThetKhine050605" class="iconLink">
+                        <img id="facebook" src="../image/facebook.png" alt="facebook">
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freeiconspng.com%2Fimages%2Ffacebook-logo-png&psig=AOvVaw2pVRtEDy187WQInWycndI0&ust=1684680442785000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCND3le2RhP8CFQAAAAAdAAAAABAT -->
+                        <span class="iconText">@KevinLin</span>
+                    </a>
+                </div>
+                <div class="offset-md-1 col-md-1 offset-sm-3 col-sm-1 py-1">
+                    <a href="https://twitter.com/home" class="iconLink">
+                        <img id="twitter" src="../image/twitter.png" alt="twitter">
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepnglogos.com%2Fpics%2Flogo-twitter-png&psig=AOvVaw3tWiVdf8_dro8NUsIiXQ6i&ust=1684680275808000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPDan52RhP8CFQAAAAAdAAAAABAE -->
+                        <span class="iconText">@ProjektKevin</span>
+                    </a>
+                </div>
+                <div class="offset-md-1 col-md-1 offset-sm-4 col-sm-1 py-1">
+                    <a href="https://www.pinterest.com/" class="iconLink">
+                        <img id="pinterest" src="../image/pinterest.png" alt="pinterest">
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Ffreebiesupply.com%2Flogos%2Fpinterest-logo-2%2F&psig=AOvVaw1J562ZthR_Opi5mgAzJeo2&ust=1684680150375000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIDUn-GQhP8CFQAAAAAdAAAAABAE -->
+                        <span class="iconText">@minthetkhine05</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

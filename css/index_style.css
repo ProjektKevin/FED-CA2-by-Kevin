@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/*
+    CA2 – Interactive Website
+    
+    stylesheet page
+    Author: Min Thet Khine
+    Date:   29 MAY 2023
+
+    Filename: opinion_style.css
+*/
+
+/* about me */
+#MyPicturecard {
+    max-width: 70%;
+}
+
+#imgMyPicture {
+    max-width: 300px;
+}
+
+#MyPicture {
+    max-width: 400px;
+}
+
+/* My values */
+#wordcloud-container {
+    border: 2px solid rgb(202, 176, 145);
+    border-radius: 10px;
+    max-width: 450px;
+}
+
+.accb {
+    background-color: rgb(255, 241, 176) !important;
+}
+
+/* my interests */
+#foodContent, #animeContent, #mangaContent, #musicContent {
+    background-color: ivory;
+    border: 1px solid lightgrey;
+    border-top: 0;
+    border-radius:0 0 7px 7px;
+}
+
+/* food */
+#foodCarousel {
+    max-width: 700px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* anime */
+.anime-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+}
+
+.animeImgContainer {
+    max-width: 500px;
+}
+  
+.animeImg {
+    display: block;
+    transition: opacity 0.5s ease; /* Add a smooth transition */
+    border: 2px solid black;
+    border-radius: 10px;
+}
+  
+.anime-description {
+    position: absolute;
+    bottom: -100%; /* Initially hidden below the image */
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(254, 222, 183, 0.8); 
+    padding: 10px;
+    text-align: center;
+    transition: bottom 0.5s ease;
+    border: 2px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+  
+.anime-container:hover .animeImg {
+    opacity: 0.7;
+}
+  
+.anime-container:hover .anime-description {
+    bottom: 0;
+}
+
+/* manga */
+.manga-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+}
+  
+.mangaTmgContainer {
+    max-width: 500px;
+}
+
+.mangaImg {
+    display: block; 
+    transition: opacity 0.5s ease; /* Add a smooth transition */
+    border: 2px solid black;
+    border-radius: 10px;
+}
+  
+.manga-description {
+    position: absolute;
+    bottom: -100%; /* Initially hidden below the image */
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(254, 222, 183, 0.8); 
+    padding: 10px;
+    text-align: center;
+    transition: bottom 0.5s ease;
+    border: 2px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+  
+.manga-container:hover .mangaImg {
+    opacity: 0.7;
+}
+  
+.manga-container:hover .manga-description {
+    bottom: 0;
+}
+
+/* Music */
+#musicAccordion {
+    max-width: 800px;
+}
+
+/* FAQ */
+.FAQbtn {
+    background-color: #feda9c !important;
+    color: black !important;
+
+}
+
+.FAQbtn:hover {
+    background-color: #fdcb76 !important;
+    color: royalblue !important;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+}
+
+#FAQoffcanvasLabel {
+    padding-left: 0.5em;
+    border-left: 3px solid #EF3340;
+}
+
+.offcanvas-body {
+    background-color: rgb(255, 241, 176);
+}
+
+.offcanvas-header {
+    background-color: #fdcb76;
+}
+
+.answers {
+    font-size: medium;
+}

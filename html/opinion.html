@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    CA2 – Interactive Website
+    
+    Page of my opinion
+    Author: Min Thet Khine
+    Date:   
+
+    Filename: opinion.html
+-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My opinion</title>
+    <link href="../css/stylesheet.css" rel="stylesheet">
+    <link href="../css/opinion_style.css" rel="stylesheet">
+    <script src="../js/clock.js" async></script>
+    <script src="../js/progressJS.js"></script>
+    <script src="../js/random.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+    
+<body id="body">
+    <header>
+        <div class="container-fluid text-center" >
+            <p>Min Thet Khine &#x2022; Kevin Lin &#x2022; DIT/FT/1A/02</p>
+        </div>
+    </header>
+
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-md py-0">
+            <div class="container-fluid">
+
+                <i class="bi bi-house-door-fill h4"></i>
+                <!-- -------------------- hamburger -------------------- -->
+                <a class="navbar-brand h2" href="index.html" id="portfolio">Kevin's Portfolio</a>
+
+                <!-- date & time -->
+                <div class="container-fluid " style="max-width: fit-content; margin-left: 0%; height: 100%;">
+                    <div id="clock">-</div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!-- -------------------- Main Navs -------------------- -->
+                <div class="collapse navbar-collapse" id="mainNav" style="max-width: fit-content;">
+                    <ul class="navbar-nav ms-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html" id="aboutMe">
+                                About Me
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="opinion.html" id="sustainabilityDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                My Sustainabilty
+                            </a>
+                            <ul class="dropdown-menu" id="sustainabiltyMenu" aria-labelledby="sustainabilityDropdown">
+                                <li><a class="dropdown-item" href="opinion.html#opinionTitle">My Opinion</a></li>
+                                <li><a class="dropdown-item" href="opinion.html#myGoals">Personal Goals</a></li>
+                                <li><a class="dropdown-item" href="opinion.html#generator">Task Generator</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="sp_es.html" id="effortsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                SP Efforts
+                            </a>
+                            <ul class="dropdown-menu" id="effortMenu" aria-labelledby="effortsDropdown">
+                                <li><a class="dropdown-item" href="sp_es.html#background">Background</a></li>
+                                <li><a class="dropdown-item" href="sp_es.html#spEfforts">Efforts</a></li>
+                                <li><a class="dropdown-item" href="sp_es.html#pastEvents">Past Events</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <section class="progress-container">
+            <div class="progress scrollingProgress" id="scroll-progress"></div>
+        </section>
+    </div>
+
+<!-- --------------------Opinion-------------------- -->
+    <article>
+        <div class="container text-center title" id="opinionTitle"> 
+            <h1>My opinion</h1>
+        </div>
+        
+        <section class="container-sm text-center mb-4">
+            <div class="row mx-auto">
+                <div class="col-md-6 col-sm-12">
+                    <div class="my-3">
+                        <p>
+                        To start of, I think Everyone can help save the Earth just by following the 
+                        list below
+                        </p>
+
+                        <ul>
+                            <li><span class="rrr">R</span>educe, <span class="rrr">R</span>euse, <span class="rrr">R</span>ecycle (3Rs)</li>
+                            <li>Reduce carbon footprint</li>
+                            <li>Think before buying</li>
+                            <li>Reduce the usage of plastic</li>
+                            <li>Donate to charity</li>
+                        </ul>
+
+                        <p>
+                            And if you have already done the above list, you can continue helping us reach the 
+                        <b>17 sustainable development goals</b> (<b>'<a href="">17 UNSDGs</a>'</b>)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <!-- UNSDG Carousel -->
+                    <div id="UNSDGCarousel" class="carousel carousel-dark slide my-3" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="carousel-container">
+                                <img src="../image/UNSDGs.jpg" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                                <!-- https://en.wikipedia.org/wiki/Sustainable_Development_Goals -->
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/1UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                                <!-- all the UNSDG images are from the same website, just replace the numbers at the back -->
+                                <!-- https://en.wikipedia.org/wiki/Sustainable_Development_Goal_1 -->
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/2UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/3UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/4UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/5UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/6UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/7UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/8UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/9UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/10UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/11UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/12UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/13UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/14UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/15UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/16UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="carousel-container">
+                                <img src="../image/17UNSDG.png" class="imgimg d-block w-100 img-thumbnail" alt="...">
+                            </div>
+                        </div>
+                        
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#UNSDGCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#UNSDGCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------------- 4, 2, 1 layout with card and text -------------------- -->
+            <div class="row mx-auto">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card my-3 ">
+                        <img src="../image/teamtrees-logo.png" class="card-img-top mx-auto my-2" alt="...">
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fsimple.wikipedia.org%2Fwiki%2FTeam_Trees&psig=AOvVaw3qs6YAiPlHg-sY9IMcaaKn&ust=1684850227104000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJDlsauKif8CFQAAAAAdAAAAABAO -->
+                        <div class="card-body">
+                        <h5 class="card-title">Team Trees</h5>
+                        <p class="card-text">Team Trees is a collaborative fundraiser that raised over $20 million to plant 20 million trees, organised by famous youtubers.</p>
+                        <a href="https://teamtrees.org/" class="btn btn-danger">Visit Site &gt;&gt;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card my-3 ">
+                        <img src="../image/teamseas-logo.png" class="card-img-top mx-auto my-2" alt="...">
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fteamseas.org%2F&psig=AOvVaw1t_bNHGH2-0K09WHnS_EBO&ust=1684850295529000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLjC8cuKif8CFQAAAAAdAAAAABAE  -->
+                        <div class="card-body">
+                        <h5 class="card-title">Team Seas</h5>
+                        <p class="card-text">Team Seas is a collaborative fundraiser that raised over $30 million to remove 30 million pounds of trash from the seas.</p>
+                        <a href="https://teamseas.org/" class="btn btn-danger">Visit Site &gt;&gt;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card my-3 ">
+                        <img src="../image/wfp-logo.png" class="card-img-top mx-auto my-2" alt="...">
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fcdn.wfp.org%2Fguides%2Fui%2Fv1.0.0%2Fdocs%2Fiframe.html%3FselectedKind%3D%2520Documentation%26selectedStory%3DLogos&psig=AOvVaw0r00ysCxj97PrdT_g-7_2A&ust=1684853028860000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPiKoOOUif8CFQAAAAAdAAAAABAE -->
+                        <div class="card-body">
+                        <h5 class="card-title"><b>W</b>orld <b>F</b>ood <b>P</b>rogramme</h5>
+                        <p class="card-text">WFP is an organisation that focuses on sending food to one of the over 120 countries where people are starving everyday.</p>
+                        <a href="https://www.wfp.org/support-us/stories/donate?utm_source=google&utm_medium=cpc&utm_campaign=11625654459&utm_content=110052963781&gclid=CjwKCAjwq4imBhBQEiwA9Nx1Bs6CgThqEjR1pSSTK16Ejp08QUUaLS2ocSuX7EEHgfkQpaJa7gENHBoCNXAQAvD_BwE&gclsrc=aw.ds" class="btn btn-danger">Visit Site &gt;&gt;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="my-5">
+                        <p>These are some of the renowned organisations that everyone can donate to</p>
+                        <div class="lists">
+                            <ol>
+                                <li><b>teamtrees</b></li>
+                                <li><b>teamseas</b></li>
+                                <li><b>The United Nations World Food Programme(WFP)</b></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </article>
+
+    <!-- --------------------Goals-------------------- -->
+    <article>
+        <div class="container text-center title" id="myGoals">
+            <h1>My Personal Goals</h1>
+        </div>
+
+        <!-- -------------------- goals nav-tabs -------------------- -->
+        <section class="container my-4">
+            <div class="nav nav-tabs" id="myGoalTab" role="tablist">
+                <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">
+                    Overview
+                </button>
+                <button class="nav-link" id="goal1-tab" data-bs-toggle="tab" data-bs-target="#goal1" type="button" role="tab" aria-controls="goal1" aria-selected="false">
+                    Goal 1
+                </button>
+                <button class="nav-link" id="goal2-tab" data-bs-toggle="tab" data-bs-target="#goal2" type="button" role="tab" aria-controls="goal2" aria-selected="false">
+                    Goal 2
+                </button>
+                <button class="nav-link" id="goal3-tab" data-bs-toggle="tab" data-bs-target="#goal3" type="button" role="tab" aria-controls="goal3" aria-selected="false">
+                    Goal 3
+                </button>
+            </div>
+
+            <!-- overview (navtab-1) -->
+            <div class="tab-content text-center py-1" id="myGoalContent">
+                <div class="tab-pane fade  show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                    <div class="mt-3">
+                        <strong class="h4">These are my 3 personal Goals that I wish to achieve:</strong><br><br>
+
+                        <div class="text-start mx-auto" style="max-width: 500px">
+                            <ol>
+                                <li>
+                                    <div class="d-flex text-center my-1" style="align-items: center;">
+                                        <div>No food wastage</div>
+                                        <div class="progress ms-4 flex-fill" style="max-width: 250px">
+                                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex text-center my-1" style="align-items: center;">
+                                        <div>Reduce plastic usage</div>
+                                        <div class="progress ms-4 flex-fill" style="max-width: 250px">
+                                            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">33%</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex text-center my-1" style="align-items: center;">
+                                        <div>Reduce usage of vehicles</div>
+                                        <div class="progress ms-4 flex-fill" style="max-width: 250px">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- goal1 (navtab-2) -->
+                <div class="tab-pane fade" id="goal1" role="tabpanel" aria-labelledby="goal1-tab">
+                    <span class="h4 text-decoration-underline">1. No food wastage</span><br><br>
+                    <div class="img-container mb-3 mx-auto" id="goal1Img">
+                        <img class="imgimg img-thumbnail" src="../image/hunger.jpg" rel="hungry"><br>
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.independent.co.ug%2Fincrease-in-worlds-hungry-people-putting-2030-zero-hunger-goal-off-track-fao%2F&psig=AOvVaw036Fs_RX-Jxjl58TPQC6yg&ust=1685189586217000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMC1usf6kv8CFQAAAAAdAAAAABAJ -->
+                    </div>
+                    <div class="my-3">
+                        <h6>How far I am in to achieving it: </h6>
+                        <div class="progress mx-auto" style="max-width: 40%">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                    </div>
+                    <p class="mx-3">
+                        My first goal is to have 0 food wastage as one of the world's biggest problem is 
+                        world hunger. By reducing the food waste, I can help redirect surplus food to those
+                        in need through donations to food banks, local organisations that distribute food to 
+                        people facing food insecurity.
+                    </p>
+
+                </div>
+
+                <!-- goal2 (navtab-3) -->
+                <div class="tab-pane fade" id="goal2" role="tabpanel" aria-labelledby="goal2-tab">
+                    <span class="h4 text-decoration-underline">2. Reduce Plastic usage</span><br><br>
+                    <div class="img-container mb-3 mx-auto" id="goal2Img">
+                        <img class="imgimg img-thumbnail" src="../image/plastic.jpg" rel="plastic"><br>
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fedu.rsc.org%2Ffeature%2Fplastic-waste%2F3009361.article&psig=AOvVaw3eYc9NHD-Y9k5tapufe_tW&ust=1685189484792000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPiVjJf6kv8CFQAAAAAdAAAAABAJ -->
+                    </div>
+                    <div class="my-3">
+                        <h6>How far I am in to achieving it: </h6>
+                        <div class="progress mx-auto" style="max-width: 40%">
+                            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">33%</div>
+                        </div>
+                    </div>
+                    <p class="mx-3">
+                        Plastic has been widely used in our day to day lives and the non biodegradable plastic
+                        materials are getting in the way of our food chain. This can cause death to several animals
+                        and destory habitats. Therefore, I aim to reduce the usage of plastic and even if I did used 
+                        it, I will recycle them.
+                    </p>
+                </div>
+
+                <!-- goal3 (navtab-4) -->
+                <div class="tab-pane fade" id="goal3" role="tabpanel" aria-labelledby="goal3-tab">
+                    <span class="h4 text-decoration-underline">3. Reduce usage of vehicles</span><br><br>
+                    <div class="img-container mb-3 mx-auto" id="goal3Img">
+                        <img class="imgimg img-thumbnail" src="../image/vehicles.png" rel="plastic"><br>
+                        <!-- https://nemo-cities.eu/a-few-vehicles-are-responsible-for-a-lot-of-air-pollution/ -->
+                    </div>
+                    <div class="my-3">
+                        <h6>How far I am in to achieving it: </h6>
+                        <div class="progress mx-auto" style="max-width: 40%">
+                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                    <p class="mx-3">
+                        Despite cars being very efficent in getting you to your destination, it emits too much carbon
+                        dioxide. Besides, most of the places can be traveled using public transport and walking a few minutes.
+                        Therefore, I plans to reduce the amount of traveling by car as much as possible and sticks to walking, 
+                        cycling and using public transport.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <!-- Generator -->
+    <aside>
+        <div class="container text-center title" id="generator">
+            <h1>Random Task Generator</h1>
+        </div>
+        
+        <section class="container my-4">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 my-auto">
+                    <p>
+                        In our ongoing commitment to creating a more sustainable future, I believe that every 
+                        small effort counts. By collectively embracing these simple yet impactful practices, 
+                        we can make a significant positive change. Let's work together to adopt the following 
+                        goals and integrate them into our daily lives, contributing to a healthier planet for 
+                        generations to come.<br>
+                        Click on the button below to show a short list of things you can do to become more sustainable.
+                    </p>
+                    <button class="btn btn-danger mb-3" name="generate" id="generateButton">Generate</button>
+                </div>
+
+                <!-- js one -->
+                <div class="col-md-6 col-sm-12">
+                    <div id="textContainer" class="p-4 my-2">Click the 'Generate' button to generate a list.</div>
+                </div>
+            </div>
+        </section>
+    </aside>
+
+    <!-- -------------------- Footer Nav -------------------- -->
+    <div class="container">
+        <ul class="pagination justify-content-center my-2">
+            <li class="footNav page-item"><a class="page-link" href="index.html">1</a></li>
+            <li class="footNav-active page-item"><a class="page-link" href="#">2</a></li>
+            <li class="footNav page-item"><a class="page-link" href="sp_es.html">3</a></li>
+            <li class="footNav page-item"><a class="page-link" href="feedback.html">4</a></li>
+        </ul>
+    </div>
+
+    <!-- -------------------- Contact Me -------------------- -->        
+    <footer>
+        <div class="container-fluid">
+            <div class="row mx-auto" id="contactRow1">
+                <div class="col-sm-12">
+                    <div id="contactTitle">
+                        <p class="h2" id="contactMe">Contact Me</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row py-2">
+                <div class="offset-md-3 col-md-1 offset-sm-3 col-sm-1 py-1">
+                    <a href="https://www.instagram.com/" class="iconLink">
+                        <img id="instagram" src="../image/instagram.png" alt="instagram">   
+                            <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fpng-zuyjk&psig=AOvVaw1gXL0JZTvu-YVQefkqaNO4&ust=1684680553061000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMjtlqGShP8CFQAAAAAdAAAAABAE -->
+                        <span class="iconText">@kevin_lin0506</span>
+                    </a>
+                </div>
+                <div class="offset-md-1 col-md-1 offset-sm-4 col-sm-1 py-1">
+                    <a href="https://www.facebook.com/MinThetKhine050605" class="iconLink">
+                        <img id="facebook" src="../image/facebook.png" alt="facebook">
+                            <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freeiconspng.com%2Fimages%2Ffacebook-logo-png&psig=AOvVaw2pVRtEDy187WQInWycndI0&ust=1684680442785000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCND3le2RhP8CFQAAAAAdAAAAABAT -->
+                        <span class="iconText">@KevinLin</span>
+                    </a>
+                </div>
+                <div class="offset-md-1 col-md-1 offset-sm-3 col-sm-1 py-1">
+                    <a href="https://twitter.com/home" class="iconLink">
+                        <img id="twitter" src="../image/twitter.png" alt="twitter">
+                            <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepnglogos.com%2Fpics%2Flogo-twitter-png&psig=AOvVaw3tWiVdf8_dro8NUsIiXQ6i&ust=1684680275808000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPDan52RhP8CFQAAAAAdAAAAABAE -->
+                        <span class="iconText">@ProjektKevin</span>
+                    </a>
+                </div>
+                <div class="offset-md-1 col-md-1 offset-sm-4 col-sm-1 py-1">
+                    <a href="https://www.pinterest.com/" class="iconLink">
+                        <img id="pinterest" src="../image/pinterest.png" alt="pinterest">
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Ffreebiesupply.com%2Flogos%2Fpinterest-logo-2%2F&psig=AOvVaw1J562ZthR_Opi5mgAzJeo2&ust=1684680150375000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIDUn-GQhP8CFQAAAAAdAAAAABAE -->
+                        <span class="iconText">@minthetkhine05</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

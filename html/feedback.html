@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    CA2 – Interactive Website
+    
+    Page of getting feedback
+    Author: Min Thet Khine
+    Date:   
+
+    Filename: feedback.html
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User feedback</title>
+    <link href="../css/stylesheet.css" rel="stylesheet">
+    <link href="../css/feedback_styles.css" rel="stylesheet">
+    <script src="../js/clock.js" async></script>
+    <script src="../js/progressJS.js"></script>
+    <script src="../js/validate.js" defer></script>
+    <script src="../js/videoPP.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+</head>
+    
+<body id="body">
+    <header>
+            <div class="container-fluid text-center" >
+                <p class="">Min Thet Khine &#x2022; Kevin Lin &#x2022; DIT/FT/1A/02</p>
+            </div>
+    </header>
+
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-md py-0 feedbackNav">
+            <div class="container-fluid">
+
+                <i class="bi bi-house-door-fill h4"></i>
+                <!-- -------------------- hamburger -------------------- -->
+                <a class="navbar-brand h2" href="index.html" id="portfolio">Kevin's Portfolio</a>
+
+                <div class="container-fluid " style="max-width: fit-content; margin-left: 0%; height: 100%;">
+                    <div id="clock">-</div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- -------------------- Main Navs -------------------- -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html" id="aboutMe">
+                                About Me
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="opinion.html" id="sustainabilityDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                My Sustainabilty
+                            </a>
+                            <ul class="dropdown-menu" id="sustainabiltyMenu" aria-labelledby="sustainabilityDropdown">
+                                <li><a class="dropdown-item" href="opinion.html#opinionTitle">My Opinion</a></li>
+                                <li><a class="dropdown-item" href="opinion.html#myGoals">Personal Goals</a></li>
+                                <li><a class="dropdown-item" href="opinion.html#generator">Task Generator</a></li>
+                            </ul>
+                        </li>
+                            
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="sp_es.html" id="effortsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                SP Efforts
+                            </a>
+                            <ul class="dropdown-menu" id="effortMenu" aria-labelledby="effortsDropdown">
+                                <li><a class="dropdown-item" href="sp_es.html#background">Background</a></li>
+                                <li><a class="dropdown-item" href="sp_es.html#spEfforts">Efforts</a></li>
+                                <li><a class="dropdown-item" href="sp_es.html#pastEvents">Past Events</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="feedback.html">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="progress-container">
+            <section class="progress scrollingProgress" id="scroll-progress"></section>
+        </div>
+    </div>
+
+    <section class="video-background">
+        <video src="../image/feedbackVideoBackground.mp4" autoplay loop muted playsinline class="backgroundVideo-feedback" id="backgroundVideo"></video>
+        <!-- https://www.pexels.com/search/nature/ -->
+
+        <!-- img -->
+        <section class="greenIMG mx-auto p-1 mt-2">
+            <div class="img-container">
+                <img class="imgimg img-fluid" src="../image/Feedback.jpg" alt="greenimg">
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dsustainability&psig=AOvVaw3nyi0BQRqf4tcFXVAfdQfv&ust=1690792914438000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKj6_MmEtoADFQAAAAAdAAAAABAZ -->
+            </div>
+        </section>
+
+        <div class="redTop mt-3 mx-auto"></div>
+
+        <article class="feedbackContainer mx-auto mb-3"> 
+            <!-- feedback header -->
+            <section class="feedbackHeader py-3 px-4"> 
+                <div class="sideBorder feedbackTitle">
+                    <strong class="h1 ps-2">Feedback</strong>
+                </div>
+
+                <div class="pausePlayContainer">
+                    <button class="pausePlayButton">
+                        <h1><i id="icon" class="bi bi-pause-fill"></i></h1>
+                    </button>
+                </div>
+
+            </section>
+
+            <!-- feedback main content -->
+            <section class="feedbackBody pt-3 px-3">
+                <!-- ------------------- Form start ------------------------- -->
+                <form class="needs-validation" novalidate>
+                    <!-- aquiring user's info -->
+                    <div>
+                        <label for="name" class="form-label width-123">Name*:</label>
+                        <input tabindex="1" type="text" class="form-control" id="name" name="cName" placeholder="Enter fullname" required autofocus/>
+                        <div id="name-error" class="invalid-feedback">Please enter your name.</div>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="email" class="form-label">Email*:</label>
+                        <input tabindex="2" type="email" class="form-control" id="email" name="email" placeholder="Eg. abc123@gmail.com" required/>
+                        <div id="email-error" class="invalid-feedback">Invalid E-mail.</div>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="phone" class="form-label">Phone Number (optional):</label>
+                        <input tabindex="3" type="tel" name="cPhone" class="form-control" id="phone" placeholder="+65 "/>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="gender">Gender:&nbsp;&nbsp;</label>
+                        <input type="radio" class="form-check-input" id="male" name="gender" value="male">
+                        <label> Male</label>
+                        <input type="radio" class="form-check-input" id="female" name="gender" value="female">
+                        <label> Female</label>
+                        <input type="radio" class="form-check-input" id="others" name="gender" value="others">
+                        <label> Prefer not to say</label>
+                    </div><br>
+                    
+                    <div>
+                        <label for="date">Date of Feedback*:</label>
+                        <input type="date" id="date" name="date" class="form-control" required>
+                        <div id="date-error" class="invalid-feedback">Please choose the date you submit this form.</div><br>
+                    </div>
+                    <hr>
+
+                    <!-- about me page -->
+                    <div>
+                        <!-- title -->
+                        <p class="text-center">
+                            <i class="bi bi-suit-diamond"></i><i class="bi bi-suit-diamond-fill"></i><i class="bi bi-suit-diamond"></i><i class="bi bi-suit-diamond-fill"></i>
+                            About me page
+                            <i class="bi bi-suit-diamond-fill"></i><i class="bi bi-suit-diamond"></i><i class="bi bi-suit-diamond-fill"></i><i class="bi bi-suit-diamond"></i>
+                        </p>
+                        
+                        <p>How Interactive was the webpage?</p>
+                            
+                        <table class="table table-sm table-borderless text-center feedback-table" style="table-layout: fixed;">
+                            <tbody>
+                                <tr>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="No interactions">
+                                        <input type="radio" class="form-check-input" id="no1" name="interaction1" value="no1" required>
+                                    </td>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Little interaction">
+                                        <input type="radio" class="form-check-input" id="little1" name="interaction1" value="little1" required>
+                                    </td>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Fair amount">
+                                        <input type="radio" class="form-check-input" id="fair1" name="interaction1" value="fair1" required>
+                                    </td>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Good amount">
+                                        <input type="radio" class="form-check-input" id="good1" name="interaction1" value="good1" required>
+                                    </td>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Overwhelming amount">
+                                        <input type="radio" class="form-check-input" id="tooMuch1" name="interaction1" value="tooMuch1" required>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="feedback-col">1</td>
+                                    <td class="feedback-col">2</td>
+                                    <td class="feedback-col">3</td>
+                                    <td class="feedback-col">4</td>
+                                    <td class="feedback-col">5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+
+                        <label for="range">Amount of content:</label><br>
+                        <div class="d-flex text-center">
+
+                            <div class="contentAmount">Too little</div>
+                            <div class="flex-fill"><input class="my-auto" type="range" id="range1" name="range" min="0" max="1000" step="100" style="width: 95%;"></div>
+                            <div class="contentAmount">Too much</div>
+
+                        </div><br>
+
+                        <label for="formControl1" class="form-label">Improvement Suggestions:</label>
+                        <textarea class="form-control" id="formControl1" rows="2" cols="5"></textarea>
+                    </div><hr class="my-4">
+                
+                    <!-- my sustainability page -->
+                    <div>
+                        <p class="text-center">
+                            <i class="bi bi-suit-diamond"></i><i class="bi bi-suit-diamond-fill"></i><i class="bi bi-suit-diamond"></i><i class="bi bi-suit-diamond-fill"></i>
+                            My Sustainability page
+                            <i class="bi bi-suit-diamond-fill"></i><i class="bi bi-suit-diamond"></i><i class="bi bi-suit-diamond-fill"></i><i class="bi bi-suit-diamond"></i>
+                        </p>
+
+                        <p>
+                            How Interactive was the webpage?
+                        </p>
+                            
+                        <table class="table table-sm table-borderless text-center" style="table-layout: fixed;">
+                            <tbody>
+                                <tr class="feedback-row">
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="No interactions">
+                                        <input type="radio" class="form-check-input" id="no2" name="interaction2" value="no2" required>
+                                    </td>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Little interaction">
+                                        <input type="radio" class="form-check-input" id="little2" name="interaction2" value="little2" required>
+                                    </td>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Fair amount">
+                                        <input type="radio" class="form-check-input" id="fair2" name="interaction2" value="fair2" required>
+                                    </td>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Good amount">
+                                        <input type="radio" class="form-check-input" id="good2" name="interaction2" value="good2" required>
+                                    </td>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Overwhelming amount">
+                                        <input type="radio" class="form-check-input" id="tooMuch2" name="interaction2" value="tooMuch2" required>
+                                    </td>
+                                </tr>
+                                <tr class="feedback-row">
+                                    <td class="feedback-col">1</td>
+                                    <td class="feedback-col">2</td>
+                                    <td class="feedback-col">3</td>
+                                    <td class="feedback-col">4</td>
+                                    <td class="feedback-col">5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <label for="range">Amount of content:</label><br>
+                        <div class="d-flex text-center">
+
+                            <div class="contentAmount">Too little</div>
+                            <div class="flex-fill"><input class="my-auto" type="range" id="range2" name="range" min="0" max="1000" step="100" style="width: 95%;"></div>
+                            <div class="contentAmount">Too much</div>
+
+                        </div><br>
+
+                        <label for="formControl2" class="form-label">Improvement Suggestions:</label>
+                        <textarea class="form-control" id="formControl2" rows="2" cols="5"></textarea>
+                    </div><hr class="my-4">
+
+                    <!-- SP sustainability page -->
+                    <div>
+                        <p class="text-center">
+                            <i class="bi bi-suit-diamond"></i><i class="bi bi-suit-diamond-fill"></i><i class="bi bi-suit-diamond"></i><i class="bi bi-suit-diamond-fill"></i>
+                            SP Sustainability page
+                            <i class="bi bi-suit-diamond-fill"></i><i class="bi bi-suit-diamond"></i><i class="bi bi-suit-diamond-fill"></i><i class="bi bi-suit-diamond"></i>
+                        </p>
+
+                        <p>
+                            How Interactive was the webpage?
+                        </p>
+                            
+                        <table class="table table-sm table-borderless text-center" style="table-layout: fixed;">
+                            <tbody>
+                                <tr>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="No interactions">
+                                        <input type="radio" class="form-check-input" id="no3" name="interaction3" value="no3" required>
+                                    </td>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Little interaction">
+                                        <input type="radio" class="form-check-input" id="little3" name="interaction3" value="little3" required>
+                                    </td>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Fair amount">
+                                        <input type="radio" class="form-check-input" id="fair3" name="interaction3" value="fair3" required>
+                                    </td>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Good amount">
+                                        <input type="radio" class="form-check-input" id="good3" name="interaction3" value="good3" required>
+                                    </td>
+                                    <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Overwhelming amount">
+                                        <input type="radio" class="form-check-input" id="tooMuch3" name="interaction3" value="tooMuch3" required>
+                                    </td>
+                                </tr>
+                                <tr class="feedback-row">
+                                    <td class="feedback-col">1</td>
+                                    <td class="feedback-col">2</td>
+                                    <td class="feedback-col">3</td>
+                                    <td class="feedback-col">4</td>
+                                    <td class="feedback-col">5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <label for="range">Amount of content:</label><br>
+                        
+                        <div class="d-flex text-center">
+
+                            <div class="contentAmount">Too little</div>
+                            <div class="flex-fill"><input class="my-auto" type="range" id="range3" name="range" min="0" max="1000" step="100" style="width: 95%;"></div>
+                            <div class="contentAmount">Too much</div>
+
+                        </div><br>
+
+                        <label for="formControl3" class="form-label">Improvement Suggestions:</label>
+                        <textarea class="form-control" id="formControl3" rows="2" cols="5"></textarea>
+
+                    </div><hr class="my-4">
+
+                    <!-- -------------------- overall -------------------- -->
+                    <div class="h5">
+                        <strong class="sideBorder">Overall</strong>
+                    </div><br>
+
+                    <!-- best page -->
+                    <div>
+                        <p>Which page did you like best?</p>
+                        <select class="form-select" aria-label="Default select Example">
+                            <option value="1">About Me</option>
+                            <option value="2">My Sustainability</option>
+                            <option value="3">SP Efforts</option>
+                        </select>
+                    </div><br>
+
+                    <!-- overall rating -->
+                    <div>
+                        <p>Overall rating:</p>
+
+                        <table class="table text-center table-sm table-borderless" style="table-layout: fixed;">
+                            <tr class="h2">
+                                <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Miserable">
+                                    <i class="bi bi-emoji-angry emoji"></i>
+                                </td>
+                                <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Unsatisfied">
+                                    <i class="bi bi-emoji-frown emoji"></i>
+                                </td>
+                                <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Average">
+                                    <i class="bi bi-emoji-neutral emoji"></i>
+                                </td>
+                                <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Satisfied">   
+                                    <i class="bi bi-emoji-smile emoji"></i>
+                                </td>
+                                <td class="feedback-col" data-bs-toggle="tooltip" data-bs-placement="top" title="Execellent">
+                                    <i class="bi bi-emoji-heart-eyes emoji"></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="feedback-col">
+                                    <input type="radio" class="form-check-input" id="angry" name="rating" value="overallAngry" required>
+                                </td>
+                                <td class="feedback-col">    
+                                    <input type="radio" class="form-check-input" id="frown" name="rating" value="overallFrown" required>
+                                </td>
+                                <td class="feedback-col">
+                                    <input type="radio" class="form-check-input" id="neutral" name="rating" value="overallNeutral" required>
+                                </td>
+                                <td class="feedback-col">
+                                    <input type="radio" class="form-check-input" id="smile" name="rating" value="overallSmile" required>
+                                </td>
+                                <td class="feedback-col">
+                                    <input type="radio" class="form-check-input" id="love" name="rating" value="overallLove" required>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- -------------------- submit/reset -------------------- -->
+                    <button type="submit" class="btn btn-danger mt-4 mb-3">Submit</button>
+                    <button type="reset" class="btn btn-danger mt-4 mb-3 mx-3" id="reset-button">Reset</button>
+
+                </form>
+                
+            </section>
+        
+        <!-- -------------------- Footer nav -------------------- -->
+        <div class="container">
+            <ul class="pagination justify-content-center mb-2">
+                <li class="footNav-feedback page-item"><a class="page-link" href="index.html">1</a></li>
+                <li class="footNav-feedback page-item"><a class="page-link" href="opinion.html">2</a></li>
+                <li class="footNav-feedback page-item"><a class="page-link" href="sp_es.html">3</a></li>
+                <li class="footNav-feedback-active page-item"><a class="page-link" href="#">4</a></li>
+            </ul>
+        </div>
+
+        </article>
+    </section>
+
+
+    <!-- -------------------- Contact Me -------------------- -->        
+    <footer>
+        <div class="container-fluid">
+            <div class="row mx-auto" id="contactRow1">
+                <div class="col-sm-12">
+                    <div id="contactTitle">
+                        <p class="h2" id="contactMe">Contact Me</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row py-2">
+                <div class="offset-md-3 col-md-1 offset-sm-3 col-sm-1 py-1">
+                    <a href="https://www.instagram.com/" class="iconLink">
+                        <img id="instagram" src="../image/instagram.png" alt="instagram">
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fpng-zuyjk&psig=AOvVaw1gXL0JZTvu-YVQefkqaNO4&ust=1684680553061000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMjtlqGShP8CFQAAAAAdAAAAABAE -->
+                        <span class="iconText">@kevin_lin0506</span>
+                    </a>
+                </div>
+                   <div class="offset-md-1 col-md-1 offset-sm-4 col-sm-1 py-1">
+                    <a href="https://www.facebook.com/MinThetKhine050605" class="iconLink">
+                        <img id="facebook" src="../image/facebook.png" alt="facebook">
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freeiconspng.com%2Fimages%2Ffacebook-logo-png&psig=AOvVaw2pVRtEDy187WQInWycndI0&ust=1684680442785000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCND3le2RhP8CFQAAAAAdAAAAABAT -->
+                        <span class="iconText">@KevinLin</span>
+                    </a>
+                </div>
+                <div class="offset-md-1 col-md-1 offset-sm-3 col-sm-1 py-1">
+                    <a href="https://twitter.com/home" class="iconLink">
+                        <img id="twitter" src="../image/twitter.png" alt="twitter">
+                        <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepnglogos.com%2Fpics%2Flogo-twitter-png&psig=AOvVaw3tWiVdf8_dro8NUsIiXQ6i&ust=1684680275808000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPDan52RhP8CFQAAAAAdAAAAABAE -->
+                        <span class="iconText">@ProjektKevin</span>
+                    </a>
+                </div>
+                <div class="offset-md-1 col-md-1 offset-sm-4 col-sm-1 py-1">
+                    <a href="https://www.pinterest.com/" class="iconLink">
+                        <img id="pinterest" src="../image/pinterest.png" alt="pinterest">
+                            <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Ffreebiesupply.com%2Flogos%2Fpinterest-logo-2%2F&psig=AOvVaw1J562ZthR_Opi5mgAzJeo2&ust=1684680150375000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIDUn-GQhP8CFQAAAAAdAAAAABAE -->
+                        <span class="iconText">@minthetkhine05</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
